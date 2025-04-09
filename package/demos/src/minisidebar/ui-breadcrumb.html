@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Breadcrumb", "subtitle": 'Home'})
+          <div class="row">
+            <!-- ----------------------------------------- -->
+            <!-- 1. Default Breadcrumb -->
+            <!-- ----------------------------------------- -->
+            <div class="col-lg-6">
+              <!--  start Default Breadcrumb -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Default Breadcrumb</h4>
+
+                  @@include("../main/ui-components/breadcrumb/code-ui-Default-Breadcrumb.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/breadcrumb/code-ui-Default-Breadcrumb.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Default Breadcrumb -->
+            </div>
+            <!-- ----------------------------------------- -->
+            <!-- 2. Custom Dividers -->
+            <!-- ----------------------------------------- -->
+            <div class="col-lg-6">
+              <!--  start Custom Dividers -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Custom Dividers</h4>
+
+                  @@include("../main/ui-components/breadcrumb/code-ui-Custom-Dividers.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/breadcrumb/code-ui-Custom-Dividers.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Custom Dividers -->
+            </div>
+            <!-- ----------------------------------------- -->
+            <!-- 3. Colored Breadcrumb -->
+            <!-- ----------------------------------------- -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!--  start Colored Breadcrumb -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Colored Breadcrumb</h5>
+
+                  @@include("../main/ui-components/breadcrumb/code-ui-Colored-Breadcrumb.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/breadcrumb/code-ui-Colored-Breadcrumb.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Colored Breadcrumb -->
+            </div>
+            <!-- ----------------------------------------- -->
+            <!-- 4. Colored Border Breadcrumb -->
+            <!-- ----------------------------------------- -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!--  start Colored Border Breadcrumb -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Colored Border Breadcrumb</h4>
+
+                  @@include("../main/ui-components/breadcrumb/code-ui-Colored-Border-Breadcrumb.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/breadcrumb/code-ui-Colored-Border-Breadcrumb.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Colored Border Breadcrumb -->
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

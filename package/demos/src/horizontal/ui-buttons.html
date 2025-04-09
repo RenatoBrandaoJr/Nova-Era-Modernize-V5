@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="horizontal">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Buttons",
+          "subtitle": 'Home'})
+          <div class="row">
+            <!-- ------------------------------------------------ -->
+            <!-- 1. Solid Buttons -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-xl-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">General Buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes <mark><code>btn btn-success</code></mark> to
+                    quickly create a General btn.
+                  </p>
+                  @@include("../main/ui-components/button/code-button-general.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-button-general.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 2. Light Buttons -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-xl-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Light Buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use <mark><code>btn-light</code></mark> class for light
+                    buttons
+                  </p>
+                  @@include("../main/ui-components/button/code-ui-Light-Buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Light-Buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 3. Buttons with outline -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-xl-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Button with outline</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes
+                    <mark><code>btn btn-outline-success</code></mark> to
+                    quickly create a General btn.
+                  </p>
+                  @@include("../main/ui-components/button/code-ui-Button-with-outline.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-with-outline.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 4. Buttons Tags -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-xl-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Button Tags</h4>
+                  <p class="mb-3 card-subtitle">
+                    The <mark><code>.btn</code></mark> classes are designed to
+                    be used with the
+                    <mark><code>.&lt;button&gt;</code></mark> element.
+                  </p>
+                  @@include("../main/ui-components/button/code-ui-Button-Tags.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-Tags.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 5. Rounded Buttons -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-xl-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Rounded Buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes
+                    <mark><code>btn btn-rounded btn-success</code></mark> to
+                    quickly create a General btn.
+                  </p>
+                  @@include("../main/ui-components/button/code-ui-Rounded-Buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Rounded-Buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 6. Light Rounded Buttons -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-xl-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Rounded light Buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes
+                    <mark><code>btn btn-rounded bg-success-subtle</code></mark>
+                    to quickly create a General btn.
+                  </p>
+                  @@include("../main/ui-components/button/code-ui-Rounded-light-Buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Rounded-light-Buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 7. Rounded outline Buttons -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Rounded outlined Buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes
+                    <mark><code>btn btn-rounded btn-outline-success</code></mark>
+                    to quickly create a General btn.
+                  </p>
+                  @@include("../main/ui-components/button/code-ui-Rounded-outlined-Buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Rounded-outlined-Buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 8. Button sizes -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Button Sizes</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes
+                    <mark><code>btn btn-lg btn-success</code></mark> to
+                    quickly create a General btn.
+                  </p>
+                  @@include("../main/ui-components/button/code-ui-Button-Sizes.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-Sizes.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 9. Rounded Button sizes -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Button Sizes with rounded</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes
+                    <mark><code>btn btn-lg btn-rounded btn-success</code></mark>
+                    to create a btn.
+                  </p>
+                  @@include("../main/ui-components/button/code-ui-Button-Sizes-with-rounded.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-Sizes-with-rounded.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 10. Block Button -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Block buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes for <mark><code>d-grid gap-2</code></mark>creating a block button.
+                  </p>
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 d-grid gap-2">
+                      @@include("../main/ui-components/button/code-ui-Block-buttons.html")
+
+                      <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                        <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Block-buttons.html")
+  </code>
+</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 11. Block Rounded Button -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Rounded Block buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classe <mark><code>rounded-pill</code></mark>.
+                  </p>
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 d-grid gap-2">
+                      @@include("../main/ui-components/button/code-ui-Rounded-Block-buttons.html")
+
+                      <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                        <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Rounded-Block-buttons.html")
+  </code>
+</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 12. Light Block Button -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Light Block buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes <mark><code>d-grid gap-2</code></mark> to
+                    quickly create a block button.
+                  </p>
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 d-grid gap-2">
+                      @@include("../main/ui-components/button/code-ui-Light-Block-buttons.html")
+
+                      <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                        <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Light-Block-buttons.html")
+  </code>
+</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 13. Light Block Rounded Button -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Rounded Block buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes
+                    <mark><code>btn btn-block btn-success</code></mark> to
+                    quickly create a General btn.
+                  </p>
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 d-grid gap-2">
+                      @@include("../main/ui-components/button/code-ui-Rounded-light-Block-buttons.html")
+
+                      <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                        <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Rounded-light-Block-buttons.html")
+  </code>
+</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 14. Block Outline Button -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-4 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Block outline buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes
+                    <mark><code>btn btn-outline-success</code></mark> to
+                    quickly create a General btn.
+                  </p>
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 d-grid gap-2">
+                      @@include("../main/ui-components/button/code-ui-Block-outline-buttons.html")
+
+                      <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                        <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Block-outline-buttons.html")
+  </code>
+</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 15. Rounded Block Outline Button -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-4 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Rounded outline Block buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes <mark><code>rounded-pill</code></mark> to
+                    quickly create a General btn.
+                  </p>
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 d-grid gap-2">
+                      @@include("../main/ui-components/button/code-ui-Rounded-outline-Block-buttons.html")
+
+                      <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                        <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Rounded-outline-Block-buttons.html")
+  </code>
+</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 16. Large Block Outline Button -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-4 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Large Block buttons</h4>
+                  <p class="mb-3 card-subtitle">
+                    Use a classes
+                    <mark><code>btn btn-lg btn-success</code></mark> to
+                    quickly create a General btn.
+                  </p>
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 d-grid gap-2">
+                      @@include("../main/ui-components/button/code-ui-Large-Block-buttons.html")
+
+                      <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                        <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Large-Block-buttons.html")
+  </code>
+</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Button with icon</h4>
+                  @@include("../main/ui-components/button/code-ui-Button-with-icon.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-with-icon.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Rounded Button with icon</h4>
+                  @@include("../main/ui-components/button/code-ui-Rounded-Button-with-icon.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Rounded-Button-with-icon.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Outline Button with icon</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Outline-Button-with-icon.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Outline-Button-with-icon.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Rounded Outline Button with icon</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Rounded-Outline-Button-with-icon.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Rounded-Outline-Button-with-icon.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Light Button with icon</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Light-Button-with-icon.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Light-Button-with-icon.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Rounded Light Button with icon</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Rounded-Light-Button-with-icon.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Rounded-Light-Button-with-icon.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Small Circle Buttons</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Small-Circle-Buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Small-Circle-Buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Circle Buttons</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Circle-Buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Circle-Buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Circle Large buttons</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Circle-Large-buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Circle-Large-buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Circle Extra Large buttons</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Circle-Extra-Large-buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Circle-Extra-Large-buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 18. Group buttons -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Group buttons</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Wrap a series of buttons with
+                    <mark><code>.btn</code></mark> in
+                    <mark><code>.btn-group</code></mark>
+                  </p>
+
+                  @@include("../main/ui-components/button/code-ui-Group-buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Group-buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 19. Group buttons sizing -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Group buttons sizing</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Wrap a series of buttons with
+                    <mark><code>.btn</code></mark> in
+                    <mark><code>.btn-group-lg , *-sm</code></mark>
+                  </p>
+
+                  @@include("../main/ui-components/button/code-ui-Group-buttons-sizing.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Group-buttons-sizing.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 20. Button toolbar pagination -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Button toolbar pagination</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Wrap a series of buttons with
+                    <mark><code>.btn</code></mark> in
+                    <mark><code>.btn-group</code></mark>
+                  </p>
+
+                  @@include("../main/ui-components/button/code-ui-Button-toolbar-pagination.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-toolbar-pagination.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 21. Button Toolbar with Input Group -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Button Toolbar with Input Group</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Button-Toolbar-with-Input-Group.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-Toolbar-with-Input-Group.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 22. Button Toolbar with Jutify Content Input Group -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Toolbar with Jutify Content Input Group
+                  </h4>
+
+                  @@include("../main/ui-components/button/code-ui-Toolbar-with-Jutify-Content-Input-Group.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Toolbar-with-Jutify-Content-Input-Group.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 23. Button with js elements -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Button with js elements</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Button-with-js-elements.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-with-js-elements.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 24. Button with checks -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Button with Checkbox</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Button-with-Checkbox.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-with-Checkbox.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 25. Button with radios -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Button with Radio</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Button-with-Radio.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Button-with-Radio.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 26. Nesting Button -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Nesting buttons with small size</h4>
+
+                  @@include("../main/ui-components/button/code-ui-Nesting-buttons-with-sizes.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Nesting-buttons-with-sizes.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 27. Nesting Buttons with vertical align -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Nesting Buttons with vertical align
+                  </h4>
+
+                  <p class="mb-3 card-subtitle">
+                    create vertical button with class of
+                    <mark><code>.btn-group-vertical</code></mark>
+                  </p>
+
+                  @@include("../main/ui-components/button/code-ui-Nesting-Buttons-with-vertical-align.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/button/code-ui-Nesting-Buttons-with-vertical-align.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

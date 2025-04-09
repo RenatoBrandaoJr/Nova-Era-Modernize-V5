@@ -1,0 +1,232 @@
+// Landing page css
+
+.header-fp.header-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bs-body-bg);
+    z-index: 9;
+
+    .navbar {
+        padding: 18px 0 !important;
+    }
+}
+
+.header-fp{
+    .navbar{
+        .navbar-nav{
+            .nav-link{
+                border-radius: var(--bs-border-radius);
+                &.active{
+                    background-color: var(--bs-primary-bg-subtle);
+                    color: var(--bs-primary) !important;
+                }
+            }
+        }
+    } 
+}
+
+.max-w-100{
+    max-width: 100% !important;
+}
+
+.top-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.rounded-24 {
+    border-radius: 24px;
+}
+
+.leadership-carousel {
+    .owl-nav {
+        position: absolute;
+        top: -98px;
+        right: 0;
+        display: flex;
+        gap: 16px;
+
+        @media (max-width: 991px) {
+            position: relative;
+            top: 0;
+            margin-top: 24px;
+        }
+    }
+}
+
+.testimonial-carousel {
+    .owl-nav {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.team-tab {
+    .nav-item {
+        flex: 1;
+
+        .nav-link {
+            white-space: nowrap;
+
+            &.active {
+                color: var(--bs-primary);
+                background-color: transparent;
+                border-top: 2px solid var(--bs-primary) !important;
+            }
+        }
+    }
+}
+
+.text-underline {
+    text-decoration: underline !important;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+.custom-container {
+    max-width: 1410px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.slide-animation1 {
+    animation: 25s linear 0s infinite normal none running marquee;
+
+    .feature-item {
+        width: 315px;
+        height: 72px;
+        flex-shrink: 0;
+        box-shadow: rgba(127, 145, 156, 0.12) 0px 6px 12px;
+    }
+}
+
+.slide-animation2 {
+    animation: 25s linear 0s infinite normal none running marquee2;
+
+    .feature-item {
+        width: 315px;
+        height: 72px;
+        flex-shrink: 0;
+        box-shadow: rgba(127, 145, 156, 0.12) 0px 6px 12px;
+    }
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .accordion-item {
+        background: var(--bs-body-bg);
+        border: 1px solid var(--bs-border-color);
+        border-radius: 8px;
+        overflow: hidden;
+
+        .accordion-header {
+            .accordion-button {
+                padding: 20px 24px;
+                font-weight: 500;
+                &:focus{
+                    border: 0;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .accordion-collapse {
+        .accordion-body {
+            padding: 16px 24px;
+        }
+    }
+}
+
+.leadership-card {
+    box-shadow: 0px 12px 24px -4px #919EAB1F;
+}
+
+.data-shadow {
+    box-shadow: 0px 12px 24px -4px #919EAB1F;
+}
+
+.dashed-border {
+    border: 1px dashed #DFE7ED;
+    cursor: pointer;
+
+    &:hover {
+        border-color: var(--bs-primary);
+
+        a {
+            color: var(--bs-primary) !important;
+            text-decoration: underline !important;
+        }
+    }
+}
+
+.topbar-image {
+    background-image: url("../images/frontend-pages/topbar-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Blog page css
+.blog-bg {
+    min-height: 366px;
+    background-image: url("../images/blog/blog-img6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.truncated-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// Blog details css
+.list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.connect-details-shape::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 163px;
+    height: 244px;
+    background-image: url("../images/frontend-pages/shape.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// animation keyframes
+@keyframes marquee {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    100% {
+        transform: translate3d(-2086px, 0px, 0px);
+    }
+
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translate3d(-2086px, 0px, 0px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}

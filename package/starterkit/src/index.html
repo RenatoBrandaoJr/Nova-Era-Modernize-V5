@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical"
+  data-boxed-layout="boxed" data-card="shadow">
+
+<head>
+  @@include("./partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+</head>
+
+<body data-sidebartype="full">
+  <div class="toast toast-onload align-items-center text-bg-primary border-0" role="alert" aria-live="assertive"
+    aria-atomic="true">
+    <div class="toast-body hstack align-items-start gap-6">
+      <i class="ti ti-alert-circle fs-6"></i>
+      <div>
+        <h5 class="text-white fs-3 mb-1">Welcome to Modernize</h5>
+        <h6 class="text-white fs-2 mb-0">Easy to costomize the Template!!!</h6>
+      </div>
+      <button type="button" class="btn-close btn-close-white fs-2 m-0 ms-auto shadow-none" data-bs-dismiss="toast"
+        aria-label="Close"></button>
+    </div>
+  </div>
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>
+        @@include("./partials/sidebar.html", { "page": "dashboard", })
+      </div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("./partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("./partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("./partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-4">Sample Page</h5>
+              <p class="mb-0">This is a sample page</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("./partials/customizer.html")
+    </div>
+
+    @@include("./partials/header-components/dd-searchbar.html")
+    @@include("./partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("./partials/scripts.html")
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+// --------------------------------------------------
+// Css Variables with class
+// --------------------------------------------------
+
+
+.tooltip-inner {
+    color: $body-color-dark !important;
+}
+
+
+.table {
+    --bs-table-border-color: #333f55;
+}
+
+.table-hover>tbody>tr:hover>* {
+    --bs-table-bg-state: $body-bg-dark;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: transparent;
+}
+
+.accordion-item,
+.accordion-item:focus {
+    --bs-accordion-btn-color: #eaeff4;
+    --bs-accordion-border-color: #333f55;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #eaeff4;
+}
+
+.nav-tabs .nav-link,
+.nav-pills .nav-link,
+.breadcrumb-item+.breadcrumb-item::before {
+    color: $link-color-dark;
+}
+
+.input-group-text {
+    background-color: $light-bg-subtle-dark;
+    border: var(--bs-table-border-color);
+    color: $body-color-dark;
+}
+
+.form-check-input {
+    border: 1.25px solid $light-bg-subtle-dark;
+}
+
+.bootstrap-switch .bootstrap-switch-label,
+.app-chat-offcanvas,
+.preloader {
+    background: $body-bg-dark !important;
+}
+
+.text-dark,
+.form-label,
+.col-form-label {
+    color: $body-color-dark !important;
+}
+
+.text-bg-light,
+.bg-light,
+.striped-rows .row:nth-child(odd),
+.bg-hover-light-black:hover {
+    background-color: $light-bg-subtle-dark !important;
+    color: var(--bs-card-title-color) !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: $dark-bg-subtle-dark;
+}
+
+.form-select,
+.form-select:focus,
+.form-control,
+.form-control:focus {
+    border-color: $border-color-dark;
+    color: $body-color-dark;
+    background-color: $body-bg-dark;
+}
+
+.connect-sorting-todo,
+.connect-sorting {
+    background: var(--bs-dark-bg-subtle);
+}
+
+a:hover {
+
+    h6,
+    .h6,
+    h5,
+    .h5,
+    h4,
+    .h4,
+    h3,
+    .h3,
+    h2,
+    .h2,
+    h1,
+    .h1 {
+        color: var(--bs-primary);
+    }
+}

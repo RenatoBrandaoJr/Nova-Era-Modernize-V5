@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "List", "subtitle": 'Home'})
+          <div class="row">
+            <!-- -------------------------------------------- -->
+            <!-- 1. Basic List -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Basic List</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Basic-List.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Basic-List.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 2. Active list item -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Active List item</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Active-List-item.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Active-List-item.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 3. Disabled list item -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Disabled List item</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Disabled-List-item.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Disabled-List-item.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 4. List with links -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">List with links</h4>
+
+                  @@include("../main/ui-components/list/code-ui-List-with-links.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-List-with-links.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 5. List with buttons -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">List with buttons</h4>
+
+                  @@include("../main/ui-components/list/code-ui-List-with-buttons.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-List-with-buttons.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 6. List with Flush -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">List with Flush</h4>
+
+                  @@include("../main/ui-components/list/code-ui-List-with-Flush.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-List-with-Flush.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 7. Horizontal list -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Horizontal list</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Horizontal-list.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Horizontal-list.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 8. Horizontal list Up Sm -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Horizontal list Up sm</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Horizontal-list-Up-sm.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Horizontal-list-Up-sm.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 9. Horizontal list Up md -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Horizontal list Up md</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Horizontal-list-Up-md.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Horizontal-list-Up-md.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 10. Horizontal list Up lg -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Horizontal list Up lg</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Horizontal-list-Up-lg.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Horizontal-list-Up-lg.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 11. Horizontal list Up xl -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Horizontal list Up xl</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Horizontal-list-Up-xl.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Horizontal-list-Up-xl.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 12. List with badges -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">List with badges</h4>
+
+                  @@include("../main/ui-components/list/code-ui-List-with-badges.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-List-with-badges.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 13. Custom Content -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Custom Content</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Custom-Content.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Custom-Content.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 14. JavaScript behavior -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">JavaScript behavior</h5>
+
+                  @@include("../main/ui-components/list/code-ui-JavaScript-behavior.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-JavaScript-behavior.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 15. List with checkbox -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">List with checkbox</h4>
+
+                  @@include("../main/ui-components/list/code-ui-List-with-checkbox.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-List-with-checkbox.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 16. List with radio -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">List with radio</h4>
+
+                  @@include("../main/ui-components/list/code-ui-List-with-radio.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-List-with-radio.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 17. Numbered list item -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Numbered List item</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Numbered-List-item.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Numbered-List-item.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <!-- 18. Numbered custom content list item -->
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Numbered custom content List item</h4>
+
+                  @@include("../main/ui-components/list/code-ui-Numbered-custom-content-List-item.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/list/code-ui-Numbered-custom-content-List-item.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

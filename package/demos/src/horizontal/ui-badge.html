@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="horizontal">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+      
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Badges", "subtitle": 'Home'})
+          <div class="row">
+            <!-- ---------------------------------------------- -->
+            <!-- 1. Badges -->
+            <!-- ---------------------------------------------- -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-4 card-title">Badges</h4>
+                  @@include("../main/ui-components/Badge/code-ui-Badges.html")
+
+                  <div
+                    class="bg-light p-3 mt-4 rounded"
+                    data-simplebar
+                    style="height: 200px">
+                    <pre class="code-view">
+<code class="language-html" >@@include("../main/ui-components/Badge/code-ui-Badges.html")
+</code>
+</pre></div>
+                </div>
+              </div>
+            </div>
+            <!-- ---------------------------------------------- -->
+            <!-- 2. Badges with button -->
+            <!-- ---------------------------------------------- -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-4 card-title">Badges with button</h4>
+                  @@include("../main/ui-components/Badge/code-ui-Badges-with-button.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/Badge/code-ui-Badges-with-button.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---------------------------------------------- -->
+            <!-- 3. Badges -->
+            <!-- ---------------------------------------------- -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-4 card-title">Badges with Background</h4>
+                  @@include("../main/ui-components/Badge/code-ui-Badges-with-Background.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/Badge/code-ui-Badges-with-Background.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---------------------------------------------- -->
+            <!-- 3. Badges Pill -->
+            <!-- ---------------------------------------------- -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Badges Pill with Background</h4>
+                  <h4 class="mb-4 card-title">Badges with Background</h4>
+                  @@include("../main/ui-components/Badge/code-ui-Badges-Pill-with-Background.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/Badge/code-ui-Badges-Pill-with-Background.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

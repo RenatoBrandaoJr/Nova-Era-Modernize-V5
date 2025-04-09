@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Pagination", "subtitle": 'Home'})
+          <div class="row">
+            <!-- ------------------------------------------------ -->
+            <!-- 1. Default Pagination -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-4 d-flex align-items-stretch">
+              <!--  start Default Pagination -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Default Pagination</h4>
+
+                  @@include("ui-components/pagination/code-ui-Default-Pagination.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/pagination/code-ui-Default-Pagination.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Default Pagination -->
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 2. Pagination with Icon -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-4 d-flex align-items-stretch">
+              <!--  start Pagination with Icon -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Pagination with Icon</h4>
+
+                  @@include("ui-components/pagination/code-ui-Pagination-with-Icon.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/pagination/code-ui-Pagination-with-Icon.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Pagination with Icon -->
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 3. Pagination with Active and Disabled States -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-4 d-flex align-items-stretch">
+              <!--  start Pagination with Active and Disabled States -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">
+                    Pagination with Active and Disabled States
+                  </h4>
+
+                  @@include("ui-components/pagination/code-ui-Pagination-with-Active-and-Disabled-States.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/pagination/code-ui-Pagination-with-Active-and-Disabled-States.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Pagination with Active and Disabled States -->
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 4. Large Pagination -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!--  start Large Pagination -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Large Pagination</h4>
+                  <p class="mb-3 card-subtitle">
+                    Fancy larger or smaller pagination? Add
+                    <mark><code>.pagination-lg</code></mark> or
+                    <mark><code>.pagination-sm</code></mark> for additional
+                    sizes.
+                  </p>
+
+                  @@include("ui-components/pagination/code-ui-Large-Pagination.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/pagination/code-ui-Large-Pagination.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Large Pagination -->
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 5. Small Pagination -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!--  start Small Pagination -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Small Pagination</h4>
+                  <p class="mb-3 card-subtitle">
+                    Fancy larger or smaller pagination? Add
+                    <mark><code>.pagination-lg</code></mark> or
+                    <mark><code>.pagination-sm</code></mark> for additional
+                    sizes.
+                  </p>
+
+                  @@include("ui-components/pagination/code-ui-Small-Pagination.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/pagination/code-ui-Small-Pagination.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Small Pagination -->
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 6. Center Alignment Pagination -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!--  start Center Alignment Pagination -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Center Alignment Pagination</h4>
+                  <p class="mb-3 card-subtitle">
+                    Change the alignment of pagination components with flexbox
+                    utilities.
+                  </p>
+
+                  @@include("ui-components/pagination/code-ui-Center-Alignment-Pagination.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/pagination/code-ui-Center-Alignment-Pagination.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Center Alignment Pagination -->
+            </div>
+            <!-- ------------------------------------------------ -->
+            <!-- 6. Right Alignment Pagination -->
+            <!-- ------------------------------------------------ -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!--  start Right Alignment Pagination -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Right Alignment Pagination</h4>
+                  <p class="mb-3 card-subtitle">
+                    Change the alignment of pagination components with flexbox
+                    utilities.
+                  </p>
+
+                  @@include("ui-components/pagination/code-ui-Right-Alignment-Pagination.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/pagination/code-ui-Right-Alignment-Pagination.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--  end Right Alignment Pagination -->
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

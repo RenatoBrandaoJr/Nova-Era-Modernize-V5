@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="dark" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Progress Bars", "subtitle": 'Home'})
+          <div class="row">
+            <!-- column -->
+            <div class="col-md-4 d-flex align-items-stretch">
+              <!-- start Default Progress bars -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Default Progress bars</h4>
+
+                  @@include("../main/ui-components/progressbar/code-ui-Default-Progress-bars.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/progressbar/code-ui-Default-Progress-bars.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Default Progress bars -->
+            </div>
+            <!-- column -->
+            <div class="col-md-4 d-flex align-items-stretch">
+              <!-- start Label Progress bars -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Label Progress bars</h4>
+
+                  @@include("../main/ui-components/progressbar/code-ui-Label-Progress-bars.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/progressbar/code-ui-Label-Progress-bars.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Label Progress bars -->
+            </div>
+            <!-- column -->
+            <div class="col-md-4 d-flex align-items-stretch">
+              <!-- start Multiple Progress bar  -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Multiple Progress bar</h4>
+
+                  @@include("../main/ui-components/progressbar/code-ui-Multiple-Progress-bar.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/progressbar/code-ui-Multiple-Progress-bar.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Multiple Progress bar  -->
+            </div>
+            <!-- column -->
+            <div class="col-md-6 d-flex align-items-stretch">
+              <!-- start Colored Progress -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Colored Progress</h4>
+
+                  @@include("../main/ui-components/progressbar/code-ui-Colored-Progress.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/progressbar/code-ui-Colored-Progress.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Colored Progress -->
+            </div>
+            <!-- column -->
+            <div class="col-md-6 d-flex align-items-stretch">
+              <!-- start Different Height Progress -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Different Height Progress</h4>
+
+                  @@include("../main/ui-components/progressbar/code-ui-Different-Height-Progress.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/progressbar/code-ui-Different-Height-Progress.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Different Height Progress -->
+            </div>
+            <!-- column -->
+            <div class="col-md-6 d-flex align-items-stretch">
+              <!-- start Striped Progress -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Striped Progress</h4>
+
+                  @@include("../main/ui-components/progressbar/code-ui-Striped-Progress.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/progressbar/code-ui-Striped-Progress.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Striped Progress -->
+            </div>
+            <!-- column -->
+            <div class="col-md-6 d-flex align-items-stretch">
+              <!-- start Animated Progress -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Animated Progress</h4>
+
+                  @@include("../main/ui-components/progressbar/code-ui-Animated-Progress.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/progressbar/code-ui-Animated-Progress.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Animated Progress -->
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

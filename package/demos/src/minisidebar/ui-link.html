@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Link", "subtitle": 'Home'})
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-3 card-title">Link opacity</h4>
+
+                  @@include("../main/ui-components/link/code-ui-Link-opacity.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/link/code-ui-Link-opacity.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-3 card-title">Link Hover</h4>
+
+                  @@include("../main/ui-components/link/code-ui-Link-Hover.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/link/code-ui-Link-Hover.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-3 card-title">Underline color</h4>
+
+                  @@include("../main/ui-components/link/code-ui-Underline-color.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/link/code-ui-Underline-color.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-3 card-title">Underline offset</h4>
+
+                  @@include("../main/ui-components/link/code-ui-Underline-offset.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/link/code-ui-Underline-offset.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-3 card-title">Underline opacity</h4>
+
+                  @@include("../main/ui-components/link/code-ui-Underline-opacity.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/link/code-ui-Underline-opacity.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-3 card-title">Hover variants</h4>
+
+                  @@include("../main/ui-components/link/code-ui-Hover-variants.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/link/code-ui-Hover-variants.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="mb-3 card-title">Colored links</h4>
+
+                  @@include("../main/ui-components/link/code-ui-Colored-links.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/link/code-ui-Colored-links.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

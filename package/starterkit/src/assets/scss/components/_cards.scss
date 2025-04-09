@@ -1,0 +1,35 @@
+html[data-card='border'] {
+    .card {
+        border: 1px solid var(--bs-border-color);
+        box-shadow: none;
+    }
+}
+
+.card {
+    margin-bottom: var(--bs-gutter-x);
+}
+
+.card-title {
+    font-size: 18px;
+    color: var(--bs-card-title-color);
+}
+
+.card-subtitle {
+    font-size: 14px;
+    color: var(--bs-card-subtitle-color);
+}
+
+.card-hover {
+    transition: 0.2s ease-in;
+
+    &:hover {
+        transform: translate3d(0px, -5px, 0px);
+    }
+}
+
+.cardwithborder {
+    .card {
+        box-shadow: none;
+        border: 1px solid var(--bs-border-color);
+    }
+}

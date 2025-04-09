@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Notification", "subtitle": 'Home'})
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!-- start Default Alert -->
+              <div class="card w-100">
+                <div class="card-body">
+
+                  <h4 class="card-title">Default Alert</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Alerts are available for any length of text, as well as an
+                    optional dismiss button. For proper styling, use one of
+                    the eight
+                    <strong>required</strong> contextual classes (e.g.,
+                    <mark><code>.alert-success</code></mark>). For background color use class
+                    <mark><code>.bg-* </code></mark>,
+                    <mark><code>.text-white </code></mark>
+                  </p>
+
+                  @@include("ui-components/notification/code-ui-Default-Alert.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/notification/code-ui-Default-Alert.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+                <!-- end card-body-->
+              </div>
+              <!-- end card-->
+              <!-- end Default Alert -->
+            </div>
+            <!-- end col-->
+
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!-- start Dismissing Alerts -->
+              <div class="card w-100">
+                <div class="card-body">
+
+                  <h4 class="card-title">Dismissing Alerts</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Add a dismiss button and the
+                    <mark><code>.alert-dismissible</code></mark>
+                    class, which adds extra padding to the right of the alert
+                    and positions the
+                    <mark><code>.close</code></mark> button.
+                  </p>
+
+                  @@include("ui-components/notification/code-ui-Dismissing-Alerts.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/notification/code-ui-Dismissing-Alerts.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+                <!-- end card-body-->
+              </div>
+              <!-- end card-->
+              <!-- end Dismissing Alerts -->
+            </div>
+            <!-- end col-->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!-- start Outline Alerts -->
+              <div class="card w-100">
+                <div class="card-body">
+
+                  <h4 class="card-title">Outline Alerts</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Add a dismiss button and the
+                    <mark><code>.border-{ color }</code></mark>
+                    class, which adds extra padding to the right of the alert
+                    and positions the
+                    <mark><code>.close</code></mark> button.
+                  </p>
+
+                  @@include("ui-components/notification/code-ui-Outline-Alerts.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/notification/code-ui-Outline-Alerts.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+                <!-- end card-body-->
+              </div>
+              <!-- end card-->
+              <!-- end Outline Alerts -->
+            </div>
+            <!-- end col-->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!-- start Light Alerts -->
+              <div class="card w-100">
+                <div class="card-body">
+
+                  <h4 class="card-title">Light Alerts</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Add a dismiss button and the
+                    <mark><code>.alert-light-{ color }</code></mark> class,
+                    which adds extra padding to the right of the alert and
+                    positions the <mark><code>.close</code></mark> button.
+                  </p>
+
+                  @@include("ui-components/notification/code-ui-Light-Alerts.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/notification/code-ui-Light-Alerts.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+                <!-- end card-body-->
+              </div>
+              <!-- end card-->
+              <!-- end Light Alerts -->
+            </div>
+            <!-- end col-->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!-- start Outline Rounded Alerts -->
+              <div class="card w-100">
+                <div class="card-body">
+
+                  <h4 class="card-title">Outline Rounded Alerts</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Add a dismiss button and the
+                    <mark><code>.rounded-pill</code></mark> class, which adds
+                    extra padding to the right of the alert and positions the
+                    <mark><code>.close</code></mark> button.
+                  </p>
+
+                  @@include("ui-components/notification/code-ui-Outline-Rounded-Alerts.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/notification/code-ui-Outline-Rounded-Alerts.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+                <!-- end card-body-->
+              </div>
+              <!-- end card-->
+              <!-- end Outline Rounded Alerts -->
+            </div>
+            <!-- end col-->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!-- start Light Rounded Alerts -->
+              <div class="card w-100">
+                <div class="card-body">
+
+                  <h4 class="card-title">Light Rounded Alerts</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Add a dismiss button and the
+                    <mark><code>.alert-light-{ color }</code></mark> class,
+                    which adds extra padding to the right of the alert and
+                    positions the <mark><code>.close</code></mark> button.
+                  </p>
+
+                  @@include("ui-components/notification/code-ui-Light-Rounded-Alerts.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/notification/code-ui-Light-Rounded-Alerts.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+                <!-- end card-body-->
+              </div>
+              <!-- end card-->
+              <!-- end Light Rounded Alerts -->
+            </div>
+            <!-- end col-->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!-- start Notify Alerts -->
+              <div class="card w-100">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <h5 class="mb-0">Notify Alerts</h5>
+                  </div>
+
+                  @@include("ui-components/notification/code-ui-Notify-Alerts.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/notification/code-ui-Notify-Alerts.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+                <!-- end card-body-->
+              </div>
+              <!-- end card-->
+              <!-- end Notify Alerts -->
+            </div>
+            <!-- end col-->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!-- start Alerts Links -->
+              <div class="card w-100">
+                <div class="card-body">
+
+                  <h4 class="card-title">Alerts Links</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Use the <mark><code>.alert-link</code></mark> utility
+                    class to quickly provide matching colored links within any
+                    alert.
+                  </p>
+
+                  @@include("ui-components/notification/code-ui-Alerts-Links.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/notification/code-ui-Alerts-Links.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+                <!-- end card-body-->
+              </div>
+              <!-- end card-->
+              <!-- end Alerts Links -->
+            </div>
+            <!-- end col-->
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <!-- start Additional content -->
+              <div class="card w-100">
+                <div class="card-body">
+
+                  <h4 class="card-title">Additional content</h4>
+
+                  <p class="mb-3 card-subtitle">
+                    Alerts can also contain additional HTML elements like
+                    headings, paragraphs and dividers.
+                  </p>
+
+                  @@include("ui-components/notification/code-ui-Additional-content.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("ui-components/notification/code-ui-Additional-content.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end card-body-->
+              <!-- end Additional content -->
+            </div>
+            <!-- end card-->
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

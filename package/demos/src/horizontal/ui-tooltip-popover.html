@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="horizontal">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Tooltips", "subtitle": 'Home'})
+          <div class="row">
+            <div class="col-12">
+              <!-- ------------------------------------------------ -->
+              <!-- 1. Tooltip -->
+              <!-- ------------------------------------------------ -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Tooltips Position</h4>
+                  <p class="mb-3 card-subtitle">
+                    Just put this to any tag
+                    <mark><code>data-bs-toggle="tooltip" title="Default
+                        tooltip"</code></mark>
+                  </p>
+
+                  @@include("../main/ui-components/tooltips-popover/code-ui-Tooltips-Position.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/tooltips-popover/code-ui-Tooltips-Position.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ------------------------------------------------ -->
+              <!-- 2. Popovers -->
+              <!-- ------------------------------------------------ -->
+
+              <div class="card">
+                <div class="card-body">
+                  <div class="mb-2">
+                    <h4 class="card-title mb-0">Popover Directions</h4>
+                  </div>
+                  <p class="mb-3 card-subtitle">
+                    Just put this to any tag
+                    <mark><code>data-container="body" title="Popover title"
+                        data-bs-toggle="popover" data-bs-placement="top"
+                        data-content="..."</code></mark>
+                  </p>
+
+                  @@include("../main/ui-components/tooltips-popover/code-ui-Popover-Directions.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/tooltips-popover/code-ui-Popover-Directions.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+              <!-- ------------------------------------------------ -->
+              <!-- 3. Dismiss on next click -->
+              <!-- ------------------------------------------------ -->
+
+              <div class="card">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <h5 class="mb-0">Popover Dismiss on next click</h5>
+                  </div>
+
+                  @@include("../main/ui-components/tooltips-popover/code-ui-Popover-Dismiss-on-next-click.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/tooltips-popover/code-ui-Popover-Dismiss-on-next-click.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+              <!-- ------------------------------------------------ -->
+              <!-- 4. Disabled elements -->
+              <!-- ------------------------------------------------ -->
+
+              <div class="card">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <h5 class="mb-0">Disabled elements</h5>
+                  </div>
+
+                  @@include("../main/ui-components/tooltips-popover/code-ui-Disabled-elements.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/tooltips-popover/code-ui-Disabled-elements.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

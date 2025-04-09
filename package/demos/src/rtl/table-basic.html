@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Basic Table", "subtitle": 'Home'})
+          <div class="card w-100 position-relative overflow-hidden">
+            <div class="px-4 py-3 border-bottom">
+              <h4 class="card-title mb-0">Basic Table</h4>
+            </div>
+            <div class="card-body p-4">
+              <div class="table-responsive mb-4 border rounded-1">
+
+                @@include("../main/bootstrap-table/basic-table/code-Basic-Table-1.html")
+
+                <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                  <pre class="code-view">
+  <code class="language-html" >@@include("../main/bootstrap-table/basic-table/code-Basic-Table-1.html")
+  </code>
+</pre>
+                </div>
+              </div>
+              <div class="table-responsive mb-4 border rounded-1">
+
+                @@include("../main/bootstrap-table/basic-table/code-Basic-Table-2.html")
+
+                <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                  <pre class="code-view">
+  <code class="language-html" >@@include("../main/bootstrap-table/basic-table/code-Basic-Table-2.html")
+  </code>
+</pre>
+                </div>
+              </div>
+              <div class="table-responsive mb-4 border rounded-1">
+
+                @@include("../main/bootstrap-table/basic-table/code-Basic-Table-3.html")
+
+                <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                  <pre class="code-view">
+  <code class="language-html" >@@include("../main/bootstrap-table/basic-table/code-Basic-Table-3.html")
+  </code>
+</pre>
+                </div>
+              </div>
+              <div class="table-responsive mb-4 border rounded-1">
+
+                @@include("../main/bootstrap-table/basic-table/code-Basic-Table-4.html")
+
+                <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                  <pre class="code-view">
+  <code class="language-html" >@@include("../main/bootstrap-table/basic-table/code-Basic-Table-4.html")
+  </code>
+</pre>
+                </div>
+              </div>
+              <div class="table-responsive border rounded-4">
+
+                @@include("../main/bootstrap-table/basic-table/code-Basic-Table-5.html")
+
+                <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                  <pre class="code-view">
+  <code class="language-html" >@@include("../main/bootstrap-table/basic-table/code-Basic-Table-5.html")
+  </code>
+</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>

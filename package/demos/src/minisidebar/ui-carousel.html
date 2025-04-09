@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  @@include("partials/head.html")
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="@@webRoot/assets/css/plugins/atom-one-dark.min.css" />
+</head>
+
+<body class="link-sidebar">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="@@webRoot/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar with-vertical">
+      <div>@@include("partials/sidebar.html", { "page": "dashboard", })</div>
+    </aside>
+    <!--  Sidebar End -->
+    <div class="page-wrapper">
+      <!--  Header Start -->
+      <header class="topbar">
+        <div class="with-vertical">@@include("partials/header.html")</div>
+        <div class="app-header with-horizontal">
+          @@include("partials/horizontal-header.html")
+        </div>
+      </header>
+      <!--  Header End -->
+
+      <aside class="left-sidebar with-horizontal">
+        @@include("partials/horizontal-sidebar.html", { "page": "dashboard",
+        })
+      </aside>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          @@include("partials/breadcrumb.html", {"title": "Carousel", "subtitle": 'Home'})
+          <div class="row">
+            <!-- ------------------------------------------ -->
+            <!-- 1. Slides only -->
+            <!-- ------------------------------------------ -->
+            <div class="col-lg-6">
+              <!-- start Slides only -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Slides only</h4>
+
+                  @@include("../main/ui-components/carousel/code-ui-Slides-only.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/carousel/code-ui-Slides-only.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Slides only -->
+            </div>
+            <!-- ------------------------------------------ -->
+            <!-- 2. With controls -->
+            <!-- ------------------------------------------ -->
+            <div class="col-lg-6">
+              <!-- start With controls -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">With controls</h4>
+
+                  @@include("../main/ui-components/carousel/code-ui-With-controls.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/carousel/code-ui-With-controls.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end With controls -->
+            </div>
+            <!-- ------------------------------------------ -->
+            <!-- 3. With indicators -->
+            <!-- ------------------------------------------ -->
+            <div class="col-lg-6">
+              <!-- start With indicators -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">With indicators</h4>
+
+                  @@include("../main/ui-components/carousel/code-ui-With-indicators.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/carousel/code-ui-With-indicators.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end With indicators -->
+            </div>
+            <!-- ------------------------------------------ -->
+            <!-- 4. With captions -->
+            <!-- ------------------------------------------ -->
+            <div class="col-lg-6">
+              <!-- start With captions -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">With captions</h4>
+
+                  @@include("../main/ui-components/carousel/code-ui-With-captions.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/carousel/code-ui-With-captions.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end With captions -->
+            </div>
+            <!-- ------------------------------------------ -->
+            <!-- 5. Crossfade -->
+            <!-- ------------------------------------------ -->
+            <div class="col-lg-6">
+              <!-- start Crossfade -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Crossfade</h4>
+
+                  @@include("../main/ui-components/carousel/code-ui-Crossfade.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/carousel/code-ui-Crossfade.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Crossfade -->
+            </div>
+            <!-- ------------------------------------------ -->
+            <!-- 6. Individual .carousel-item interval -->
+            <!-- ------------------------------------------ -->
+            <div class="col-lg-6">
+              <!-- start Individual -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">
+                    Individual
+                    <mark><code>.carousel-item</code></mark> interval
+                  </h4>
+
+                  @@include("../main/ui-components/carousel/code-ui-Individual-carousel-item-interval.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/carousel/code-ui-Individual-carousel-item-interval.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Individual -->
+            </div>
+            <!-- ------------------------------------------ -->
+            <!-- 7. Dark variant -->
+            <!-- ------------------------------------------ -->
+            <div class="col-lg-6">
+              <!-- start Dark variant -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Dark variant</h4>
+
+                  @@include("../main/ui-components/carousel/code-ui-Dark-variant.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/carousel/code-ui-Dark-variant.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Dark variant -->
+            </div>
+            <div class="col-lg-6">
+              <!-- start Disable touch swiping -->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Disable touch swiping</h4>
+
+                  @@include("../main/ui-components/carousel/code-ui-Disable-touch-swiping.html")
+
+                  <div class="bg-light p-3 mt-4 rounded" data-simplebar style="height: 200px">
+                    <pre class="code-view">
+  <code class="language-html" >@@include("../main/ui-components/carousel/code-ui-Disable-touch-swiping.html")
+  </code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!-- end Disable touch swiping -->
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("partials/customizer.html")
+    </div>
+
+    @@include("partials/header-components/dd-searchbar.html")
+    @@include("partials/header-components/dd-shopping-cart.html")
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  @@include("partials/scripts.html")
+</body>
+
+</html>
