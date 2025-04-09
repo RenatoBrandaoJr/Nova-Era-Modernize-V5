@@ -4,7 +4,10 @@ This is a SaaS template based on the Modernize Bootstrap 5 Admin Template. It pr
 
 ## Overview
 
-This project uses a Gulp-based build system to compile assets and serve the application locally. The main source code for the template is located within the `package/starterkit/src` directory.
+This project uses a Gulp-based build system to compile assets and serve the application locally. It contains two main working directories within the `package` folder:
+
+*   `package/starterkit`: Use this for building a **new application** based on the template or for **customizing the core framework**.
+*   `package/demos`: Use this to run the **pre-built demo applications** as shown in the official documentation.
 
 ## Technology Stack
 
@@ -35,20 +38,26 @@ This project uses a Gulp-based build system to compile assets and serve the appl
 └── README.md             # This file
 ```
 
-## Installation
+## Installation & Running
+
+Choose the instructions below based on your goal:
+
+### Option 1: Developing a New Application (Using Starterkit)
+
+Use these steps if you want to customize the core template or build your own application from the starter kit.
 
 1.  **Prerequisites:** Ensure you have Node.js and npm installed on your system.
 2.  **Navigate to Starterkit:** Open your terminal and change the directory to the core template folder:
     ```bash
     cd "package/starterkit"
     ```
-3.  **Install Dependencies:** Run the following command to install the necessary Node.js packages:
+3.  **Install Dependencies:** Run the following command to install the necessary Node.js packages for the starter kit:
     ```bash
     npm install
     ```
     *(Note: The `preinstall` script `npx npm-force-resolutions` might run first)*
 
-## Running Locally (Development)
+**Running Starterkit Locally (Development Mode):**
 
 1.  **Navigate to Starterkit:** Make sure you are in the `package/starterkit` directory in your terminal.
 2.  **Start Development Server:** Run the default Gulp task:
@@ -59,14 +68,48 @@ This project uses a Gulp-based build system to compile assets and serve the appl
     *   Compile SCSS to CSS.
     *   Process HTML files (including partials).
     *   Start a local development server using BrowserSync.
-    *   Open the application in your default browser.
+    *   Open the starter kit application in your default browser.
     *   Watch for changes in HTML and SCSS files and automatically reload the browser.
 
-## Building for Production
+**Building Starterkit for Production:**
 
 1.  **Navigate to Starterkit:** Make sure you are in the `package/starterkit` directory in your terminal.
 2.  **Run Build Task:** Execute the Gulp build command:
     ```bash
     npx gulp build
     ```
-    This will create (or overwrite) the `dist` folder in the **root** directory (`/Users/renatobrandao/Documents/Nova Era modernize V5/dist`) with the optimized and production-ready files (compiled CSS, processed HTML, minified JS, copied assets, etc.).
+    This will create (or overwrite) the `dist` folder in the **project root** directory (`/Users/renatobrandao/Documents/Nova Era modernize V5/dist`) with the optimized and production-ready files based on the starter kit.
+
+### Option 2: Running Pre-built Demos
+
+Use these steps if you want to view and run the pre-built demo applications included with the template, as described in the official documentation.
+
+1.  **Prerequisites:** Ensure you have Node.js and npm installed.
+2.  **Navigate to Demos:** Open your terminal and change the directory to the demos folder:
+    ```bash
+    cd "package/demos"
+    ```
+3.  **Install Dependencies:** Run the following command to install the necessary Node.js packages for the demos:
+    ```bash
+    npm install
+    ```
+4.  **(Optional) Install Gulp Globally:** If you haven't already, the documentation recommends installing the Gulp command-line interface globally (you might need `sudo` on macOS/Linux):
+    ```bash
+    npm install --global gulp-cli
+    ```
+5.  **Start Demos Server:** Run the default Gulp task from the `package/demos` directory:
+    ```bash
+    gulp
+    ```
+    *(Note: If you didn't install gulp-cli globally, you might need to run `npx gulp` instead)*.
+    This will start a local server, likely running the demo applications.
+
+**Building Demos for Production:**
+
+1.  **Navigate to Demos:** Make sure you are in the `package/demos` directory.
+2.  **Run Build Task:** Execute the Gulp build command:
+    ```bash
+    gulp build
+    ```
+    *(or `npx gulp build`)*.
+    Check the `gulpfile.js` within the `demos` directory to confirm where the build output is placed (it might also go to the root `dist` folder or a subfolder within `demos`).
